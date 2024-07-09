@@ -2,16 +2,16 @@
 const int sensorPin = A0; // Analog input pin that the INA240 output is connected to
 
 // Constants for calculation
-const float referenceVoltage = 3.3; // Reference voltage for the Arduino ADC (Using multimeter measure between +5V and GND)
+const float referenceVoltage = 4.55; // Reference voltage for the Arduino ADC (Using multimeter measure between +5V and GND)
 const float shuntResistorValue = 0.01; // Value of the shunt resistor in ohms (10 milliohm)
-const float gain = 50.0; // Gain of the INA240, it can be 20, 50, 100, or 200
+const float gain = 50.0; // Gain of the INA240, it can be A1=20, A2=50, A3=100, A4=200
 const int numSamples = 100; // Number of samples for averaging
 const float error = 0;
 
 void setup() {
   // Initialize serial communication for debugging
   Serial.begin(115200);
-  analogReference(EXTERNAL);
+  //analogReference(EXTERNAL);
 }
 
 void loop() {
