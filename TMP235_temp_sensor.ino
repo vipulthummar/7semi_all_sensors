@@ -5,7 +5,6 @@ const int numSamples = 100;
 
 void setup() {
   Serial.begin(115200);
-  //analogReference(EXTERNAL); // Set the reference voltage to EXTERNAL (typically 3.3V or 5V)
 }
 
 void loop() {
