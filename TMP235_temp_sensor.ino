@@ -23,7 +23,7 @@ void loop() {
   float averageVoltage = sumVoltage / numSamples;
 
   // Calculate temperature based on the average voltage
-  float temperatureC = (averageVoltage - 0.66) * 100.0;
+  float temperatureC = (averageVoltage - 0.5) * 100.0;
 
   Serial.print("Average Voltage: ");
   Serial.println(averageVoltage, 4); // Print voltage with 4 decimal places
