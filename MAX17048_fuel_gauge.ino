@@ -1,6 +1,6 @@
 #include <Wire.h>
 
-#define MAX17048_ADDRESS 0x36 // I2C address for MAX17048
+#define MAX17048_ADDRESS < 127 ;  I2C address for MAX17048
 
 void setup() {
   Serial.begin(115200);
